@@ -11,6 +11,6 @@
 
     height: 100%;
     width: 100%;
-    object-fit: fill; /* Vai esticar preenche todo o container */
+    object-fit: fill; /* Preenche todo o container */
 
 }
