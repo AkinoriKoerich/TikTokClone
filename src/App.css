@@ -16,7 +16,7 @@ html {
 
 .app__videos {
 
-  height: 100vh;
+  height: 95vh;
 
   max-height: 800px; /* Adiciona limite ao tamanho */
   width: 80%; /* Muda o comprimento */
@@ -25,7 +25,7 @@ html {
 
   border: 1px solid black; /* Adiciona uma borda de 1 pixel */
 
-  border-radius: 20px; /* Arredonda as bordas */
+  border-radius: 15px; /* Arredonda as bordas */
 
   overflow: scroll; /* Quando exceder... */
 
