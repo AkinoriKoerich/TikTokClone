@@ -5,7 +5,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ChatIcon from '@mui/icons-material/Chat';
 import ShareIcon from '@mui/icons-material/Share';
 
-function VideoSidebar({ likes, messages, shares }) {
+function VideoSidebar({ likes, messages, shares, onShare }) {
   const [liked, setLiked] = useState(false);
   const [heartAnimation, setHeartAnimation] = useState(false);
 
@@ -42,9 +42,9 @@ function VideoSidebar({ likes, messages, shares }) {
         <p> {messages} </p>
       </div>
 
-      <div className="videoSideBar__option">
+      <div className="videoSideBar__option" onClick={onShare}>
         <ShareIcon fontSize="medium" />
-        <p> {shares}</p>
+        <p>{shares}</p>
       </div>
     </div>
   );
