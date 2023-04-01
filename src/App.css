@@ -15,11 +15,11 @@ html {
 }
 
 .app__videos {
-
-  height: 95vh;
+  height: 90vh;
 
   max-height: 800px; /* Adiciona limite ao tamanho */
-  width: 80%; /* Muda o comprimento */
+
+  width: 60%; /* Muda o comprimento */
 
   max-width: 500px; /* Adiciona um limite ao comprimento */
 
@@ -32,8 +32,8 @@ html {
   scroll-snap-type: y mandatory; /* Para fazer o snap no scroll */
 
   position: relative;
-
 }
+
 
 /* Para esconder a scroll bar no Chrome, Safari e Opera */
 
