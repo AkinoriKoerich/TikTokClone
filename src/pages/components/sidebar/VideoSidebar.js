@@ -5,7 +5,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ChatIcon from "@mui/icons-material/Chat";
 import ShareIcon from "@mui/icons-material/Share";
 
-function VideoSidebar({ likes, messages, shares, onShare }) {
+function VideoSidebar({ likes, messages, shares, onShare, onMessageClick }) {
   const [liked, setLiked] = useState(false); //define o estado "liked" como false e a função "setLiked" para alterar o valor
   const [heartAnimation, setHeartAnimation] = useState(false); //define o estado "heartAnimation" como false e a função "setHeartAnimation" para alterar o valor
 
@@ -39,7 +39,7 @@ function VideoSidebar({ likes, messages, shares, onShare }) {
         )}
       </div>
 
-      <div className="videoSideBar__option">
+      <div className="videoSideBar__option" onClick={onMessageClick}>
         {" "}
         {}
         <ChatIcon fontSize="medium" /> {}
